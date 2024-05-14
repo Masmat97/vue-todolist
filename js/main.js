@@ -12,13 +12,18 @@ createApp({
                 "Andare in palestra",
                 "Fare la doccia"
             ],
-
+            newList: ''
 
         }
     },
 
 methods: {
-
+    addList: function() {
+        if (this.newList.trim() !== '') {
+          this.lists.push(this.newList);
+          this.newList = '';
+        }
+      }
 },
 
 mounted() {

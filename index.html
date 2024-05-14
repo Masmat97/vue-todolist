@@ -18,7 +18,8 @@
             <li v-for="list in lists">{{ list }}</li>
         </ul>
 
-
+<input type="text" v-model="newList" placeholder="Aggiungi una nuova attività">
+<button @click="addList">Aggiungi</button>
     </div>
 
     <script src="./js/main.js"></script>
