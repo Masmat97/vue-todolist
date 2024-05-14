@@ -23,6 +23,9 @@ methods: {
           this.lists.push(this.newList);
           this.newList = '';
         }
+      },
+      removeList: function(index) {
+        this.lists.splice(index, 1);
       }
 },
 
